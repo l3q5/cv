@@ -118,22 +118,6 @@
 	\ifthenelse{\equal{#1}{}}{\medskip\bigskip}{}%
 }
 
-
-% Publication
-% Arguments: DOI, Date, Venue, Volume/Issue, Authors, Title
-% TODO: DeclareCommand and use key-value (type=xxx)
-\newcommand{\publication}[7][proceedings]{%
-	\small{\noindent\ignorespaces{#6}}.
-    \small{\justifying\noindent\ignorespaces{``{\href{https://doi.org/#2}{#7}}''}}.
-    %\small{In: \noindent\ignorespaces{\textit{\ifthenelse{\equal{#1}{proceedings}}{Proceedings of the}{}#4}}%
-    \small{\textit{\noindent\ignorespaces{#4}}%
-    \noindent\ignorespaces{\ifthenelse{\equal{#5}{}}{}{%
-        \ifthenelse{\equal{#1}{proceedings}}{ (\noindent\ignorespaces{#5})}{, \noindent\ignorespaces{#5}}%
-    }.} \noindent\ignorespaces{#3}.
-	DOI:~{\href{https://doi.org/#2}{#2}}}
-}
-
-
 % Generic entry (skills, projects, etc)
 % Arguments: title, description
 \newcommand{\entry}[3][]{%
@@ -143,8 +127,6 @@
 	\end{small}%
 	}\ifthenelse{\equal{#1}{}}{\bigskip}{}%
 }
-
-
 
 \begin{document}
 \pagestyle{empty}
