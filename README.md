@@ -1,4 +1,4 @@
-My résumé
+My résumé<br>
 Meu currículo
 =========
 
