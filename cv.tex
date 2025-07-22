@@ -24,7 +24,7 @@
 	pdfauthor={Caio Duarte},
 	pdfsubject={CV for Caio Duarte},
 	pdfkeywords={resumé, résumé, curriculum vitae, CV, experience, education, software,
-	engineer, developer, Linux, C, C++, Python},
+	engineer, developer, Linux, Python},
 	pdfpagemode=UseOutlines,
 	breaklinks,
 	linktoc=all,
@@ -54,7 +54,7 @@
 
 
 % Set size of columns
-\newcommand{\hmargin}{1.7cm} % 1.8cm or more is ideal
+\newcommand{\hmargin}{2cm} % 1.8cm or more is ideal
 \newcommand{\lcolsize}{.60\textwidth}
 \newcommand{\rcolsize}{.35\textwidth}
 
@@ -131,8 +131,9 @@
 \begin{document}
 \pagestyle{empty}
 \begin{minipage}[t][\hmargin][c]{\lcolsize}
-	{\huge\textbf{Caio Duarte}}\\[1.1em]
-	{\Large{Full Stack Software Engineer}}
+	{\huge\textbf{Caio Duarte}}\\[1em]
+	{\Large{Full Stack Software Engineer}}\\[0.1em]
+  Rio de Janeiro, Brazil
 \end{minipage}%
 \hfill%
 \protect\begin{minipage}[t][\hmargin][c]{\rcolsize}
@@ -143,11 +144,11 @@
 			\large{\mobilephonesymbol{}} & 
 			{\href{tel:+5521991297994}{{+55}~{(21)}~{99129}~{7994}}}\\
 			\large{\emailsymbol{}} &
-			{\href{mailto:l3q5@protonmail.com}{{{l3q5}@protonmail.com}}} \\
+			{\href{mailto:l3q5@proton.me}{{{l3q5}@proton.me}}} \\
 			\large{\linkedinsymbol{}} &
-			{\href{https://www.linkedin.com/in/l3q5/}{{l3q5}}} \\
+			{\href{https://www.linkedin.com/in/l3q5/}{{Caio Duarte}}} \\
 			\large{\githubsymbol{}} &
-			{\href{https://github.com/l3q5}{{l3q5}}} \\
+			{\href{https://github.com/l3q5}{{Caio Duarte}}} \\
 		\end{tabular*}
 	}
 	\end{adjustbox}
@@ -155,9 +156,6 @@
 
 \begin{minipage}[t][][t]{\lcolsize}
 	\input{exp}
-	\bigskip
-	\medskip
-	\input{proj}
 \end{minipage}%
 \hfill%
 \begin{minipage}[t][][t]{\rcolsize}
@@ -166,7 +164,6 @@
 	\medskip
 	\input{skills}
 	\bigskip
-	\input{lang}
 \end{minipage}
 \vfill
 
