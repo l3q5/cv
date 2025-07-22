@@ -1,5 +1,5 @@
 \documentclass[a4paper,10pt,notitlepage]{article}
-\usepackage[a4paper,left=1.6cm,right=1.6cm,top=.8cm,bottom=1.6cm]{geometry}
+\usepackage[a4paper,left=1.4cm,right=1.4cm,top=.5cm,bottom=.5cm]{geometry}
 %\usepackage[cm,empty]{fullpage}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -10,7 +10,7 @@
 \usepackage{adjustbox}
 \usepackage{enumitem}
 \usepackage{pdfsync}
-\usepackage[scaled=.94]{helvet}
+\usepackage[scaled=1]{helvet}
 \usepackage{xcolor}
 \usepackage{ragged2e}
 \usepackage{ifthen}
@@ -88,9 +88,11 @@
 			{\ignorespaces \textbf{#2}}
 			\hfill
 			{\ignorespaces {#3}} --- {\ignorespaces {#4}}
+      \smallskip
+      \smallskip
 		}
-		\smallskip
 		\parbox{\linewidth}{{\ignorespaces {#5}}}
+    \\[1em]
 		\parbox{\linewidth}{{\ignorespaces {#6}}}
 	}\ifthenelse{\equal{#1}{}}{\medskip\bigskip}{}
 }
@@ -101,7 +103,7 @@
 	\ifthenelse{\equal{#1}{}}{\def\last{false}}{\def\last{true}}
 	{\ignorespaces #3}
 	\parbox{\linewidth}{\noindent\ignorespaces {#2}}%
-	\\[1em]
+  \\[1em]
 	\begin{normalsize}%
 	\ignorespaces%
 }{%
@@ -132,7 +134,7 @@
 \pagestyle{empty}
 \begin{minipage}[t][\hmargin][c]{\lcolsize}
 	{\huge\textbf{Caio Duarte}}\\[1em]
-	{\Large{Full Stack Software Engineer}}\\[0.1em]
+	{\Large{Full-Stack Software Engineer}}\\[0.1em]
   Rio de Janeiro, Brazil
 \end{minipage}%
 \hfill%
